@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: #fffafc;   /* very soft pink background */
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #f8cdda, #fbc7d4); /* pastel pink gradient */
+  color: #4a4a4a;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #333;
+}
+header p {
+  font-style: italic;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Navbar */
+nav {
+  background: #ffd6e0;  /* soft light pink */
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: #333;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+nav a:hover {
+  color: white;
+  background-color: #e75480; /* rose pink hover */
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.section-light {
+  background: #fffafc;
+}
+.section-dark {
+  background: #ffeef5; /* light pink section */
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: #d94f7b;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+  margin: 15px auto;
+}
+.profile-pic:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255,182,193,0.6); /* soft pink glow */
+}
+
+/* Skills & Projects */
+.skills, .projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  background: #ffe6f2;  /* light pink hover */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  color: #333;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #ffb6c1, #ffc1cc); /* soft pink */
+  color: #333;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+button:hover {
+  background: linear-gradient(135deg, #ff9eb5, #ffb6c1);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #ffd6e0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
